@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: green;
+    height: 500px;
+}
+
+
+.container p {
+    margin: 0;
+}
+
+
+/* za kazdym razem gry zmieniamy pozycje na inna niz statyczna (np. absolute, reative), otrzymujemy dostep do takich wlasciwosci jak left righ top bottom) 
+
+RELATIVE pozycja relatywna zostawia zarezerwowane miejsce w ktorym znajduje sie element i przesuwa ten element od tego miejsca (dlatego relatywna)*/
+
+.red {
+
+    background-color: red;
+    position: relative;
+    /* left: 60px;
+    top: 30px */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+/* pozycja absolutna nie zostawia zarezerwowanego miejsca ( inne elementy zajma miejsce), odsuwa sie od elementu(najpierw szuka rodzica), ktory jest pozycjonowany relatywnie. Jezeli nie ma takiego to ustawia sie wzgledem BODY */
+.red {
+    position: absolute;
+}
+
+/* pozycja fixed )zafixowana, ustalona, przyklejona), odsuwa dany element wzgledem OKNA PRZEGLADARKI.
+        !!!!!    Jesli pozycja jest zafixowana to ustawiamy top=0 i width: 100%;   !!!!*/
+.red{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+.grey {
+    background-color: grey;
+}
